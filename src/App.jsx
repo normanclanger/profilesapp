@@ -68,7 +68,7 @@ function process(v)
 function checkcourse(v)
 {
 
-	p="Bearer "
+	var p="Bearer "
 	p+="s1cJ1edlCEljmW"
 	p+="BEQtcmxWLJAidQvkLr"
 
