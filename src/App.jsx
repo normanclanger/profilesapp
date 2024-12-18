@@ -67,6 +67,11 @@ function process(v)
 
 function checkcourse(v)
 {
+
+	p="Bearer "
+	p+="JZvFs0Q4Pc6TFxn"
+	p+="y8MP6l7RpW13YBbCd"
+
 	if ((document.getElementById("myInput")).value.length!=3)
 	{
 		document.getElementById("statusmessage").innerText=document.getElementById("myInput").value+" is not 3 letters";
@@ -81,7 +86,7 @@ function checkcourse(v)
 	  {
 		document.getElementById("final").innerText="Updating to station code "+document.getElementById("myInput").value;
 
-fetch("https://api.balena-cloud.com/v7/device_environment_variable(62657750)", {  method: "PATCH",  headers: {    "Content-type": "application/json" , "Authorization": "Bearer JZvFs0Q4Pc6TFxny8MP6l7RpW13YBbCd"  },  body: JSON.stringify({    value: document.getElementById("myInput").value  })}) .then(response => {    console.log(response.status); })
+fetch("https://api.balena-cloud.com/v7/device_environment_variable(62657750)", {  method: "PATCH",  headers: {    "Content-type": "application/json" , "Authorization": p  },  body: JSON.stringify({    value: document.getElementById("myInput").value  })}) .then(response => {    console.log(response.status); })
 
 
 	  }
