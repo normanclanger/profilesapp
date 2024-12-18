@@ -69,8 +69,10 @@ function checkcourse(v)
 {
 
 	p="Bearer "
-	p+="JZvFs0Q4Pc6TFxn"
-	p+="y8MP6l7RpW13YBbCd"
+	p+="s1cJ1edlCEljmW"
+	p+="BEQtcmxWLJAidQvkLr"
+
+
 
 	if ((document.getElementById("myInput")).value.length!=3)
 	{
